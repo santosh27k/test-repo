@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function insert_newElement()
+{
+        var newItem  = document.createTextNode("This is the dynamically appended text!!!");
+        var textpart   = document.getElementById("my_text");
+        textpart.appendChild(newItem);
+}
+</script>
+</head>
+<body onclick="insert_newElement()">
+<h1 id= "my_text"> Please click on this page </h1>
+</body>
+</html>
